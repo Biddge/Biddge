@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Events | Biddge</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <div class="nav-left">
+      <a href="index.html" class="brand">Biddge</a>
+      <a href="about.html">About</a>
+      <a href="membership.html">Membership</a>
+      <a href="creator.html">Join as Creator</a>
+      <a href="events.html" class="active">Events</a>
+      <a href="careers.html">Careers</a>
+    </div>
+
+    <div class="nav-center">
+      <input class="nav-search" type="search" placeholder="Search anything…" onkeyup="liveSearch(this.value)">
+    </div>
+
+    <div class="nav-right">
+      <a href="support.html" class="nav-icon">🎧</a>
+      <span class="nav-lang">🌐 EN</span>
+      <span class="nav-divider">|</span>
+      <button class="theme-toggle" onclick="toggleTheme()">
+        <span class="theme-icon"></span>
+        <span class="theme-text">Theme</span>
+      </button>
+      <a href="login.html" class="nav-link">Log in</a>
+      <button class="hamburger">☰</button>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <section>
+    <div class="search-item">
+      <h1>Events</h1>
+      <p>Workshops, meetups, and live learning sessions.</p>
+    </div>
+
+    <div class="search-item">
+      <h3>Upcoming Events</h3>
+      <p>Join industry experts and live discussions.</p>
+    </div>
+  </section>
+</main>
+
+<script src="js/theme.js"></script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | Biddge</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <div class="nav-inner">
+
+    <div class="nav-left">
+      <a href="index.html" class="brand">Biddge</a>
+      <a href="about.html">About</a>
+      <a href="membership.html">Membership</a>
+      <a href="creator.html">Join as Creator</a>
+      <a href="events.html">Events</a>
+      <a href="careers.html">Careers</a>
+    </div>
+
+    <div class="nav-center">
+      <input
+        class="nav-search"
+        type="search"
+        placeholder="Search anything…"
+        onkeyup="liveSearch(this.value)"
+      />
+    </div>
+
+    <div class="nav-right">
+      <a href="support.html" class="nav-icon">🎧</a>
+      <span class="nav-lang">🌐 EN</span>
+      <span class="nav-divider">|</span>
+
+      <button class="theme-toggle" onclick="toggleTheme()">
+        <span class="theme-icon"></span>
+        <span class="theme-text">Theme</span>
+      </button>
+
+      <a href="login.html" class="nav-link active">Log in</a>
+      <button class="hamburger" onclick="toggleMenu()">☰</button>
+    </div>
+
+  </div>
+</nav>
+
+<main class="auth-page">
+
+
+<main class="auth-page">
+  <div class="auth-container">
+
+    <!-- Social login -->
+    <button class="social-btn">
+  <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google">
+  Continue with Google
+</button>
+
+<button class="social-btn">
+  <img src="https://www.svgrepo.com/show/475647/facebook-color.svg" alt="Facebook">
+  Continue with Facebook
+</button>
+
+<button class="social-btn">
+  <svg class="apple-icon" viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M16.365 1.43c0 1.14-.465 2.203-1.29 3.015-.835.823-2.22 1.45-3.43 1.36-.12-1.115.48-2.26 1.29-3.08.83-.83 2.28-1.43 3.43-1.295zM20.3 17.52c-.44 1.01-.65 1.46-1.22 2.37-.79 1.23-1.9 2.77-3.29 2.79-1.23.01-1.55-.8-3.23-.8-1.68 0-2.05.78-3.26.81-1.39.02-2.45-1.38-3.24-2.6-2.23-3.44-2.46-7.48-1.09-9.57.98-1.52 2.54-2.41 4.01-2.41 1.5 0 2.44.82 3.68.82 1.2 0 1.94-.83 3.67-.83 1.31 0 2.7.72 3.68 1.97-3.24 1.77-2.72 6.36.29 7.45z"/>
+  </svg>
+  Continue with Apple
+</button>
+
+
+
+    <div class="divider">
+      <span></span>
+      <p>OR</p>
+      <span></span>
+    </div>
+
+    <!-- Tabs -->
+    <div class="auth-tabs">
+      <button>Create account</button>
+      <button class="active">Login</button>
+    </div>
+
+    <!-- Login form -->
+    <form class="auth-form" onsubmit="return fakeLogin()">
+
+      <input type="email" placeholder="Email" required>
+
+      <div class="password-field">
+        <input type="password" id="password" placeholder="Password" required>
+        <span class="eye" onclick="togglePassword()">👁</span>
+      </div>
+
+      <a href="#" class="forgot">Forgot password?</a>
+
+      <button type="submit" class="primary-btn">
+        Login with Email
+      </button>
+
+    </form>
+
+    <p class="terms">
+      By continuing, you agree to our
+      <a href="#">terms of services</a> and
+      <a href="#">privacy policy</a>
+    </p>
+
+  </div>
+</main>
+
+<script src="js/theme.js"></script>
+
+
+<script>
+function togglePassword() {
+  const input = document.getElementById("password");
+  input.type = input.type === "password" ? "text" : "password";
+}
+
+function fakeLogin() {
+  alert("Login successful (demo)");
+  return false;
+}
+</script>
+
+</body>
+</html>
